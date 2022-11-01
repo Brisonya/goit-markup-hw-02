@@ -5,6 +5,7 @@
   --accent-color: #2196F3;
   --hero-item: #212121;
   --our-team: #F5F4FA;
+  --color-75: #757575;
 }
 
 body{
@@ -66,7 +67,7 @@ color: var(--header-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;;
+  color: var(--color-75);
 }
 .header-mail:hover{
   color: var(--accent-color);
@@ -123,12 +124,11 @@ color: var(--btn-color);
   background-color: #F5F5F5;
 }
 
-.hero-list > .hero-item{
+.hero-list > .hero-item >.title{
 font-weight: 700;
 font-size: 14px;
-line-height: 1.14px;
+line-height: 1.14;
 letter-spacing: 0.03em;
-text-transform: uppercase;
 
 color: var(--hero-item);
 }
@@ -139,7 +139,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
-color: #757575;
+color: var(--color-75);
 }
 .hero-subtitle{
 font-weight: 700;
@@ -150,9 +150,7 @@ letter-spacing: 0.03em;
 
 color: #212121;
 }
-.list about-work{
 
-}
 .our-team {
   background-color: var(--our-team);
 }
@@ -165,8 +163,6 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: #212121;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .about-team > .team .team-name{
 font-weight: 500;
@@ -185,7 +181,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #757575;
+color: var(--color-75);
 
 }
 /* ----------------------footer------------------- */
@@ -223,7 +219,6 @@ color: #212121;
 }
 
 .card .card-title{
-font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
@@ -231,13 +226,45 @@ letter-spacing: 0.06em;
 color: #212121;
 }
 .card .card-subtitle{
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 
-color: #757575;
+color: var(--color-75);
 }
 .section{
   background-color: #FFFFFF;;
 }
+
+.footer-logo{
+  font-family: 'raleway', sans-serif ;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.footer-logo > span{
+  font-family: 'raleway', sans-serif ;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.footer-mail,.footer-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail:hover{
+  color: var(--accent-color);
+}
+
+.footer-tel:hover{
+  color: var(--accent-color);
+} 
